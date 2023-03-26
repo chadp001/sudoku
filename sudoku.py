@@ -44,7 +44,6 @@ def is_valid_move(board, guess, position):
     return True
 
 
-
 def find_empty_cell(board):
     """
     Finds the next empty cell in the Sudoku board.
@@ -86,6 +85,7 @@ def solve_sudoku(board):
     # If no valid guess leads to a solution, the board is unsolvable
     return False
 
+
 def convert(split_data, grid_template):
     """
     Convert a list of split data into a 2D grid of integers based on a given grid template.
@@ -121,7 +121,6 @@ def open_board(filename):
 
     # Return the converted 2D grid
     return grid_data
-
 
 
 def make_move(grid_data, col, row, number):
